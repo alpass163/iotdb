@@ -849,4 +849,8 @@ public abstract class AstVisitor<R, C> {
   protected R visitRangeQuantifier(RangeQuantifier node, C context) {
     return visitPatternQuantifier(node, context);
   }
+
+  public R visitSetQueryMode(SetQueryMode setQueryMode, C context) {
+    return visitStatement(setQueryMode, context);
+  }
 }

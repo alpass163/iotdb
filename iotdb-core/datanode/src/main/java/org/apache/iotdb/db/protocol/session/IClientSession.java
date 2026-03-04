@@ -204,4 +204,11 @@ public abstract class IClientSession {
       }
     }
   }
+
+  public enum QueryMode {
+    NORMAL,
+    CHAIN,
+    ENC,
+    SIG;
+  }
 }
